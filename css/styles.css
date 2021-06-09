@@ -30,6 +30,7 @@ body {
 .item_title {
     color: var(--Very_light_gray);
     font-family: 'Big Shoulders Display', cursive, sans-serif;
+    text-transform: uppercase;
 }
 
 .item_text {
