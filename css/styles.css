@@ -1,0 +1,110 @@
+:root {
+    /*Primary*/
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+    /*-------------------*/
+    /*Neutral*/
+    /*(paragraphs)*/
+    --Transparent_white: hsla(0, 0%, 100%, 0.75);
+    /*(background, headings, buttons)*/
+    --Very_light_gray: hsl(0, 0%, 95%);
+}
+
+body {
+    background-color: var(--Very_light_gray);
+}
+
+.flex-container {
+    display: flex;
+    /*aligen horizontal*/
+    margin: auto;
+    width: 60%;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+}
+
+
+/****general item design****/
+
+.item_title {
+    color: var(--Very_light_gray);
+    font-family: 'Big Shoulders Display', cursive, sans-serif;
+}
+
+.item_text {
+    color: var(--Transparent_white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.item_btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var( --Very_light_gray);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    margin-top: 30px;
+    font-weight: medium;
+    text-align: center;
+}
+
+
+/***item design****/
+
+.item_1 {
+    background-color: var(--Bright_orange);
+    border-radius: 10px 0px 0px 10px;
+    padding: 50px;
+}
+
+.item_2 {
+    background-color: var(--Dark_cyan);
+    padding: 50px;
+}
+
+.item_3 {
+    background-color: var(--Very_dark_cyan);
+    border-radius: 0px 10px 10px 0px;
+    padding: 50px;
+}
+
+
+/****text btn color****/
+
+.item_1 .item_btn {
+    color: var(--Bright_orange);
+}
+
+.item_2 .item_btn {
+    color: var(--Dark_cyan);
+}
+
+.item_3 .item_btn {
+    color: var(--Very_dark_cyan);
+}
+
+
+/*------------mobile or tablet--------------*/
+
+@media only screen and (max-width: 1024px) {
+    .flex-container {
+        flex-direction: column;
+        width: 95%;
+        margin-top: 10%;
+    }
+    .item_1 {
+        border-radius: 10px 10px 0px 0px;
+        padding: 50px;
+    }
+    .item_2 {
+        padding: 50px;
+    }
+    .item_3 {
+        border-radius: 0px 0px 10px 10px;
+        padding: 50px;
+    }
+}
